@@ -1,0 +1,160 @@
+body {
+    padding-top: 10px;
+    background-image: url(laphotoCombine.png);
+    background-size: cover;
+    color: rgb(84, 83, 83);
+padding-bottom: 18px;
+}
+
+.prenom{
+ font-weight: bold;
+ font-size: 2.9em;
+}
+
+.card {
+    border-radius: 15px;
+  }
+  
+
+.nomDeFamille{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.miniature {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.titrePartie {
+    font-size: 2em;
+    padding-left: 50px;
+    padding-top: 11px;
+    margin-top: 20px;
+}
+
+.text-right {
+     text-align: right ;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.btn-margin {
+    margin: 3px 2px 2px 5px;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.btn-java {
+    background-color: rgba(237, 32, 37, 255);
+    border: none;
+    font-weight: bold;
+}
+
+
+.btn-html{
+    background-color: rgb(231, 135, 66);
+    font-weight: bold;
+}
+
+
+.btn-csharp{
+    background-color: rgb(162,122,221);
+    font-weight: bold;
+}
+
+.btn-reseau{
+    background-color: rgb(210, 207, 26);
+    font-weight: bold;
+}
+.btn-all{
+    background-color: rgb(28, 211, 12);
+    font-weight: bold;
+}
+
+
+.menuSouligne:hover {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+
+  }
+.menuSouligne{
+    color: rebeccapurple;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+  .bleu{
+    color: rgb(64, 64, 233); 
+font-weight: bold;
+}
+
+.contactTel , .contactMail{
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.boutonCategories{
+    margin-top: 30px;
+    padding-left: 60px;
+}
+
+.boutonCategories > span{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#myButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 24px;
+    z-index: 9999;
+  }
+  .boutonContact {
+    background-color: #007bff !important;
+  }
+  
+
+@media screen and (max-width : 760px){
+    .titrePartie{
+        font-size: 1.8em;
+    }
+
+    .text-right{
+        text-align: center;
+    }
+}
+
+
+<!-- /* Path: portfolio.css */ -->
+
+.card-columns {
+    column-count: 3; /* Nombre de colonnes pour les cartes */
+}
+
+@media (max-width: 992px) {
+    .card-columns {
+        column-count: 2; /* Passage à 2 colonnes sur les écrans de taille moyenne */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-columns {
+        column-count: 1; /* Passage à 1 colonne sur les petits écrans */
+    }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body {
+            font-family: "Consolas", monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="window.location.href='#linkContact'" id="myButton" class="boutonContact">
+        <img src="LogoMail.png" alt="LogoMail" width="40" height="40">
+    </button>
+
+
+    <div class="container header">
+        <div class="row align-items-center ">
+            <div class="col-md-3 col-12 text-center ">
+                <span class="prenom">Tristan </span><span class="nomDeFamille bleu"> Petit</span>
+            </div>
+            <div class="col-md-3 col-12 text-right menuHeader">
+                <span class="bleu">01. </span><a href="#linkPresentation" class="menuSouligne">&lt;Présentation&gt;</a>
+            </div>
+            <div class="col-md-3 col-12 text-right menuHeader ">
+                <span class="bleu">02. </span><a href="#linkMesProjets" class="menuSouligne">&lt;Projets&gt;</a>
+            </div>
+            <div class="col-md-3 col-12 text-right menuHeader">
+                <span class="bleu">03. </span><a href="#linkContact" class="menuSouligne">&lt;Contact&gt;</a>
+            </div>
+        </div>
+
+        <div class="row presentation titrePartie" id="linkPresentation">
+            <p><span class="bleu">01. </span>&lt;Présentation&gt;</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>Bonjour, je suis Tristan Petit, apprenti développeur </p>
+            </div>
+        </div>
+        <div class="row mesProjets" id="linkMesProjets">
+            <div class="col-md-12 titrePartie"><span class="bleu">02. </span>&lt;Mes projets&gt;</div>
+            <div class="col-md-12 boutonCategories"> <span>Languages </span>
+                <a id="btn-all" class="btn btn-margin btn-all" role="button">Tous</a>
+                <a id="btn-java" class="btn btn-margin btn-java" role="button">Java</a>
+                <a id="btn-html" class="btn btn-margin btn-html" role="button">HTML/CSS</a>
+                <a id="btn-csharp" class="btn btn-margin btn-csharp" role="button">C#</a>
+                <a id="btn-reseau" class="btn btn-margin btn-reseau" role="button">Réseau</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 projet java">
+                <div class="card shadow my-5 m-3 carteProjet  ">
+                    <div class="col-md-3"><a class="btn btn-margin btn-java" role="button">Java</a></div>
+                    <img src="OdomoChauffage.png" class="card-img-top miniature" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ODOMO</h5>
+                        <p class="card-text">Programmation d'une station météorologique avec affichage</p>
+                        <a href="RetexSaeOdomo.pdf" target="_blank" class="btn btn-danger">Télécharger le
+                            PDF</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 projet html">
+                <div class="card shadow my-5 m-3 carteProjet">
+                    <div class="col-md-3"><a class="btn btn-margin btn-html" role="button">HTML/CSS</a>
+                    </div>
+                    <img src="SaeWebCapture.PNG" class="card-img-top miniature" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">ANALYSITE</h5>
+                        <p class="card-text">Programmation d'un sité web pour la publication d'un rapport</p>
+                        <a href="RetexSaeWeb.pdf" target="_blank" class="btn btn-danger">Télécharger
+                            le PDF</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 projet csharp">
+                <div class="card shadow my-5 m-3 carteProjet  ">
+                    <div class="col-md-3"><a class="btn btn-margin btn-csharp" role="button">C#</a></div>
+                    <img src="CaptureHyperstellarBoard.PNG" class="card-img-top miniature" alt="">
+                    <div class="card-body">
+                        <p>&nbsp;</p>
+                        <h5 class="card-title"> HYPERSTELLAR</h5>
+                        <p class="card-text">Réalisation d'un jeu de plateau</p>
+                        <a href="RetexSaeIHM.pdf" target="_blank" class="btn btn-danger">Télécharger
+                            le PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 projet reseau">
+                <div class="card shadow my-5 m-3 carteProjet  ">
+                    <div class="col-md-3"><a class="btn btn-margin btn-reseau" role="button">Réseau</a>
+                    </div>
+                    <img src="CaptureReseau.PNG" class="card-img-top miniature" alt="">
+                    <div class="card-body">
+                        <p>&nbsp;</p>
+                        <h5 class="card-title">SERVICE RESEAUX</h5>
+                        <p class="card-text">Installation et configuration d'un réseau entre différentes machines
+                            dans le but de produire
+                            un tutoriel
+                        </p>
+                        <a href="RetexSaeReseaux.pdf" target="_blank" class="btn btn-danger">Télécharger le PDF</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row contact titrePartie" id="linkContact">
+        <p><span class="bleu">03. </span>&lt;Contact&gt;</p>
+    </div>
+    <div class="row contactMail align-items-center">
+        <div class="col-md-1"></div>
+        <div class="col-md-1 col-4 text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-at"
+                viewbox="0 0 16 16">
+                <path
+                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                <path
+                    d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+            </svg>
+        </div>
+        <div class="col-md-3 col-8"> <a href="mailto:tristanpetit33@gmail.com">tristanpetit@yahoo.fr</a> </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
